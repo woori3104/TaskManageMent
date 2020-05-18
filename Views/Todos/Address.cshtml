@@ -1,0 +1,101 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<body>
+    <div id="headerBtn">
+        <button id="address_newBtn">NEW</button>
+        <button id="address_search">SERACH</button>
+        <button id="address_delBtn">ALL DEL</button>
+    </div>
+    <div id="adress_searchForm"  class="showing_off">
+        <div>
+            <span>Name : </span>
+            <input type="text" placeholder="" id="serachInput"/>
+        </div>
+        <div class="searchBtn">
+            <button id="address_serachSubmit">SUBMIT</button>
+            <button id="address_serachCancle">CANCEL</button>
+        </div>
+    </div>
+    <div id="address_inputForm" class="showing_off">
+        <div id="input_main">
+            <div class="input__column showing_off">
+                <div><span>Id</span></div>
+                <div><input type="text" id="address_Id" disabled="disabled" /></div>
+            </div>
+            <div class="input__column">
+                <div>
+                    <span>Name</span>
+                </div>
+                <div>
+                    <input type="text" id="address_Name" />
+                </div>
+            </div>
+            <div class="input__column">
+                <div>
+                    <span>PhoneNumber</span>
+                </div>
+                <div>
+                    <input type="tel" name="tellNum" id="address_telNum" />
+                </div>
+            </div>
+            <div class="input__column">
+                <div>
+                    <span>Email</span>
+                </div>
+                <div>
+                    <input type="email" id="address_email" />
+                </div>
+            </div>
+            <div class="input__column">
+                <div>
+                    <span>Company</span>
+                </div>
+                <div>
+                    <input type="text" id="address_company" />
+                </div>
+            </div>
+            <div class="input__column">
+                <div><span>Memo</span></div>
+                <div><textarea id="address_memo"></textarea></div>
+            </div>
+        </div>
+        <div class="input_footer">
+            <button id="address_submit">Submit</button>
+            <button id="address_cancel">Cancel</button>
+        </div>
+    </div>
+    <div>
+        <ul id="address_listForm">
+            <li class="address_list_title">
+                <div class="input__column showing_off">
+                    <span>Id</span>
+                </div>
+                <div class="input__column">
+                    <span>Name</span>
+                </div>
+                <div class="input__column">
+                    <span>PhoneNumber</span>
+                </div>
+                <div class="input__column">
+                    <span>Email</span>
+                </div>
+                <div class="input__column">
+                    <span>Company</span>
+                </div>
+                <div class="input__column">
+                    <span>Memo</span>
+                </div>
+                <div class="input__column">
+                    <span>Modify</span>
+                </div>
+                <div class="input__column">
+                    <span>Delete</span>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+</body>
+@Scripts.Render("~/bundles/addressjs")
+@Styles.Render("~/Content/addresscss")

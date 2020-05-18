@@ -1,0 +1,135 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<body>
+    <div id="headerBtn">
+        <button id="newBtn">NEW</button>
+        <button id="delBtn">ALL DELETE</button>
+    </div>
+    <div class="showing_off" id="todos_inform">
+        <div id="input_main">
+            <div class="input__column showing_off">
+                <div>
+                    <span>Id</span>
+                </div>
+                <div>
+                    <input type="text" placeholder="TaskId" id="todos_Id" disabled="disabled" />
+                </div>
+            </div>
+            <div class="input__column">
+                <div>
+                    <span>State</span>
+                </div>
+                <div>
+                    <select id="todos_state">
+                        <option>Ready</option>
+                        <option>Start</option>
+                        <option>Inprogress</option>
+                        <option>completed</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input__column">
+                <div>
+                    <span>Priority</span>
+                </div>
+                <div>
+                    <select id="todos_priority">
+                        <option>High</option>
+                        <option>Middle</option>
+                        <option>Low</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input__column">
+                <div>
+                    <span>TaskTitle</span>
+                </div>
+                <div>
+                    <input type="text" placeholder="TaskTitle" id="todos_Title" />
+                </div>
+            </div>
+            <div class="input__column">
+                <div>
+                    <span>StartDate</span>
+                </div>
+                <div>
+                    <input type="date" id="starttime"
+                           name="startDate" />
+                </div>
+            </div>
+            <div class="input__column">
+                <div>
+                    <span>EndDate</span>
+                </div>
+                <div>
+                    <input type="date" id="endtime"
+                           name="endtime" />
+                </div>
+            </div>
+            <div>
+                <div><span>Memo</span></div>
+                <div><textarea id="todos_memo" name="todos_memo"></textarea></div>
+            </div>
+        </div>
+        <div class="input_footer">
+
+            <button id="todos_submit">Submit</button>
+            <button id="todos_cancel">Cancle</button>
+        </div>
+    </div>
+    <div id="todos">
+        <ul id="todos_ul">
+            <li class="todo_list_title">
+                <div class="todos_input__column showing_off">
+
+                    <span>Id</span>
+
+                </div>
+                <div class="todos_input__column">
+
+                    <span>State</span>
+
+                </div>
+                <div class="todos_input__column">
+
+                    <span>Priority</span>
+
+                </div>
+                <div class="todos_input__column">
+
+                    <span>TaskTitle</span>
+
+                </div>
+                <div class="todos_input__column">
+
+                    <span>StartDate</span>
+
+                </div>
+                <div class="todos_input__column">
+
+                    <span>EndDate</span>
+
+                </div>
+                <div class="todos_input__column">
+
+                    <span>Modify</span>
+
+
+                </div>
+                <div class="todos_input__column">
+
+                    <span>Delete</span>
+
+                </div>
+
+            </li>
+
+        </ul>
+
+    </div>
+
+</body>
+@Scripts.Render("~/bundles/todosjs")
+@Styles.Render("~/Content/todoscss")

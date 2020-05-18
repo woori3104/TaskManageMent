@@ -1,0 +1,153 @@
+﻿
+
+.showing_off {
+    display: none;
+}
+
+.diary_list_title {
+    justify-content: space-between;
+    text-align: center;
+    display: flex;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.pwBtn {
+    color:white;
+}
+
+.diary_input__column {
+    margin: 15px;
+    width: 180px;
+}
+
+.diary_input__column span {
+        margin: 15px;
+        width: 150px;
+        text-align: left;
+    }
+
+#diary_input_header {
+    display: flex;
+    justify-content: space-between;
+}
+.diary_form {
+    justify-content: space-between;
+    text-align: center;
+    display: flex;
+}
+#diary_input_header {
+    margin-top: 30px;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+    display: flex;
+}
+
+.diary_list {
+    color: white;
+    font-size: 20px;
+    justify-content: space-between;
+    text-align: center;
+    display: flex;
+}
+
+
+.main_column {
+
+    display:flex;
+    margin:10px;
+    font-size:25px;
+    margin-top:20px;
+
+}
+.main_column {
+    width: 100%;
+}
+
+.main_column textarea {
+    width: 100%;
+    height:160px;
+}
+
+.main_column span {
+    
+    text-align:right;
+    margin-right:20px;
+
+}
+
+
+.input_column_Id  {
+    width: 80%;
+    margin-left: -10px;
+}
+
+.input_column_date {
+    width: 80%;
+    margin-left: 10px;
+}
+
+.input_column_pw  {
+    width: 80%;
+    margin-left: 10px;
+}
+
+.input_column_title {
+    width: 120%;
+    text-align:left;
+    margin-left:10px;
+}
+.input_column_Id input {
+    width: 100%%;
+}
+.input_column_Date input {
+    width: 100%;
+}
+.input_column_title input {
+    width: 100%;
+}
+.input_column_pw input {
+    width: 100%;
+}
+
+.detail_Tiltle {
+
+    margin-left:10px; 
+    margin-top:30px;
+    font-size:30px;
+    margin-bottom:20px;
+    color:grey;
+
+}
+
+#diary_detail_header {
+    margin-top: 10px;
+    display: flex;
+    width: 80%;
+    font-size: 20px;
+    margin-bottom:20px;
+    
+}
+.detailContentsTitle {
+    color:grey;
+}
+
+#diary_detail_header div {
+    margin-right: 20px;
+}
+
+.input_footerBtn {
+    display: flex;
+    justify-content: space-around;
+
+}
+#detailModify {
+    margin-left: -50px;
+}
+
+.diary_detailtitle_column:hover {
+    cursor: pointer;
+    color: bisque;
+}

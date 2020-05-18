@@ -1,0 +1,57 @@
+﻿.showing_off {
+    display: none;
+}
+.address_inputForm {
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.input_main {
+    margin-bottom:30px;
+    width:100%;
+}
+
+.input_main .input__column {
+    margin:15px;
+}
+.input__column div {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input_main .input__column span {
+    margin: 15px;
+    text-align:left;
+}
+
+.address_list_title {
+    color: white;
+    font-size: 20px;
+    justify-content: space-between;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.address_list {
+    color: white;
+    font-size: 20px;
+    justify-content: space-between;
+    text-align: left;
+    display: flex;
+    width: 100%;
+    margin-bottom:30px;
+}
+
+.address_listForm {
+    margin-top: 20px;
+}
+
+#adress_searchForm {
+    margin-left: 70%;
+    margin-bottom: 30px;
+    align-items: flex-end;
+}
+
+.searchBtn {
+    margin: 10px;
+}

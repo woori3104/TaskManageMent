@@ -1,0 +1,104 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<body>
+    <div id="headerBtn">
+        <button id="diary_newBtn">NEW</button>
+    </div>
+    <div id="diary_input_form" class="showing_off">
+        <div class="diary_form">
+
+            <div id="diary_input_header">
+                <div class="input_column_Id showing_off">
+                    <div><span>Id</span></div>
+                    <div><input type="text" id="diary_Id" disabled="disabled" /></div>
+                </div>
+                <div class="input_column_date">
+                    <div><span>Date</span></div>
+                    <div><input type="date" id="diary_Date"
+                          name="startDate" /> </div>
+                </div>
+                <div class="input_column_title">
+                    <div><span>Title</span></div>
+                    <div><input type="text" placeholder="title" id="diary_title" /></div>
+                    
+                </div>
+                <div class="input_column_pw">
+                    <div><span>Password</span></div>
+                    <div><input id="password" type="password" placeholder="password" /></div>
+                </div>
+
+                <div class="input_column_pw">
+                    <div><span>Confirm</span></div>
+                    <div> <input id="password2" type="password" placeholder="confirm password" /></div>
+                </div>
+            </div>
+        </div>
+        <div class="main_column">
+            <span>Contents</span>
+            <textarea placeholder="contents" id="diary_Contents"></textarea>
+        </div>
+        <div class="input_footer">
+            <button id="diary_submit">Submit</button>
+            <button id="diary_cancel">Cancel</button>
+        </div>
+    </div>
+    <div>
+        <ul id="diary_listform">
+            <li class="diary_list_title">
+                <div class="diary_input__column showing_off">
+                    <span>Id</span>
+                </div>
+                <div class="diary_input__column">
+                    <span id="diary_list_date">Date</span>
+                </div>
+                <div class="diary_input__column">
+                    <span id="diary_list_title">Title</span>
+                </div>
+                <div class="diary_input__column">
+                    <span>Modify</span>
+                </div>
+                <div class="diary_input__column">
+                    <span>Delete</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div id="diary_detail" class="showing_off">
+        <div>
+            <div class="detail_Tiltle">Diary Detail</div>
+            <div id="diary_detail_header">
+                <div class="input_column_Id showing_off">
+                    <span id="detailId"></span><span />
+                </div>
+                <div class="detail_column_date">
+                    <div>
+                        <span id="detailDate"></span>
+                    </div>
+                </div>
+                <div class="detail_column_title">
+
+                    <span>
+                        Title :
+                    </span>
+                    <span id="detail_title"></span>
+
+                </div>
+            </div>
+        </div>
+        <span class="detailContentsTitle">Contents </span>
+        <div class="main_column">
+
+            <div id="detailContents"></div>
+        </div>
+        <div class="input_footerBtn">
+            <div class="input_footer">
+                <button id="detailClose">Close</button>
+            </div>
+        </div>
+    </div>
+</body>
+@Scripts.Render("~/bundles/diaryjs")
+@Styles.Render("~/Content/diarycss")
